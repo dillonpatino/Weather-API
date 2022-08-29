@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary">
+        <h1 class="p-2 text-light text-center">Weather Dashboard</h1>
+    </header>
+   
+    <div class="m-4 p-4">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h4>Search for a City:</h4>
+                        <form class="form-inline" id="search-form">
+                            <input type="search" class="form-control mb-2" id="cityname" placeholder="Enter city name...">
+                        </form>
+                        <button type="button" id="search" class="btn btn-primary btn-sm">Search</button>
+                    <ul class="list-group" id="search-history"></ul>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="d-flex flex row">
+                                <h2 class="card-title align-self-center" id="city-name"></h2>
+                            </div>
+                            <h3 class="card-subtitle mt-3 text-muted" id="city-temp">Temp:</h3>
+                            <h3 class="card-subtitle mt-3 text-muted" id="city-wind">Wind:</h3>
+                            <h3 class="card-subtitle mt-3 text-muted" id="city-humid">Humidity:</h3>
+                            <h3 class="card-subtitle mt-3 text-muted" id="city-uv">UV Index:</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="card-title mt-3">5-Day Forecast:</h4>
+                    <div class="row justify-content-between" id="5-day"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
